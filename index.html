@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-12"><h1>С днем рождeния, Катя!</h1></div>
+				<div class="col-12"><a class="btn" href="javascript:PopUpShow()">*ТЫК СЮДА*</a></div>
+			</div>
+		</div>
+		<div class="b-popup text-center" id="popup1">
+		    <div class="b-popup-content">
+		        <video width="100%" height="auto" controls="controls" poster="http://www.pngmart.com/files/5/Happy-Birthday-PNG-HD.png">
+		    	<source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+		          Тег video не поддерживается вашим браузером. 
+		         </video>
+		    <a class="btn" href="javascript:PopUpHide()">*ТЫК ЧТОБЫ ЗАКРЫТЬ*</a>
+		    <a class="btn" href="ask.html">*ТЫК СЮДА ЧТОБЫ ПОЛУЧИТЬ ПОДАРОК*</a>
+		    </div>
+		</div>
+	</header>
+	<script src="js/scripts.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+	<script>
+	    $(document).ready(function(){
+	        //Скрыть PopUp при загрузке страницы    
+	        PopUpHide();
+	    });
+	    //Функция отображения PopUp
+	    function PopUpShow(){
+	        $("#popup1").fadeIn( "slow" );
+	    }
+	    //Функция скрытия PopUp
+	    function PopUpHide(){
+	        $("#popup1").fadeOut( "slow" );
+	    }
+	</script>
+	
+
+</body>
+</html>
+<script>
+	    $(document).ready(function(){
+	        $("#done7").click (function () {
+	        	var ask7 = $("#ask7").val ();
+	        	if (ask7 == 'Завтра') {
+	        		$("#popup7").addClass("FadeIn");
+	        	}
+	        	else if (ask7 == '1') {
+	        		$("#popup7").addClass("FadeIn");
+	        	}
+	        	else if (ask7 == 'Завтра ') {
+	        		$("#popup7").addClass("FadeIn");
+	        	}
+	        	else if (ask7 == 'завтра ') {
+	        		$("#popup7").addClass("FadeIn");
+	        	}
+	        	else {
+	        		alert("Неправильно!");
+	        	}
+	        });
+	    }); 
+	</script>

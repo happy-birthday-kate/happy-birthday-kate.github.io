@@ -1,0 +1,140 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+*
+	transition: all 0.5s ease
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Amatic SC', cursive;
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+.fixed 
+	position: fixed; 
+	width: 100%;
+.dn
+	display: none
+
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+header
+	position: relative
+	background: #fff url(../img/balls/Happy-birthday-cake-and-candle-lights-on-it-wallpapers.jpg) 88% 100% no-repeat fixed
+	background-size: cover
+	z-index: 1
+	height: 100vh	
+	&::before
+		content: ''
+		position: absolute	
+		top: 0	
+		bottom: 0	
+		right: 0	
+		left: 0	
+		background: rgba(0, 0, 0, 0.4)
+		z-index: -1
+
+	h1
+		margin: 100px 0 55px
+		font-size: 55px
+		line-height: 65px
+		font-weight: bold	
+		span
+			display: block
+.btn
+	display: inline-block
+	margin-bottom: 10px	
+	text-decoration: none	
+	padding: 15px 40px
+	background: $text
+	border-radius: 15px
+	border: none
+	font-weight: bold
+.b-popup
+	background: rgba(#000, 0.90)
+#popup1
+	position: absolute
+	top: 0
+	left: 0	
+	width: 100%
+	height: 100%
+section
+	z-index: 1
+	height: 100vh
+	overflow: hidden
+	position: relative
+	&:nth-child(odd)
+		background: #CCFFFF
+		color: #FF6600
+		input
+			color: #FF6600
+		a
+			color: #FF6600
+	h2
+		margin-top: 111px
+		font-size: 45px
+	h1
+		font-size: 65px
+		line-height: 70px
+	p
+		font-size: 35px
+		line-height: 40px
+	input
+		display: inline-block
+		width: 200px
+		height: 40px
+		margin-top: 15px
+		border-radius: 7px
+	.b-popup-content
+		padding-top: 150px
+	.b-popup
+		opacity: 0
+		z-index: -1
+	.FadeIn
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		opacity: 1
+		z-index: 100
+
+
+
+
+
+
+
+@import "media" // Always at the end
